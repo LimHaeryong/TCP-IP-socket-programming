@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -Wall
 LDLIBS = -lpthread
 
-PROGRAMS = init_socket practice
+PROGRAMS = byte_order ip_addr name_resolution practice
 
 all: $(PROGRAMS)
 
