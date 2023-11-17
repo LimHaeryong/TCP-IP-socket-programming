@@ -42,7 +42,7 @@ int main()
         }
 
         char addr[INET_ADDRSTRLEN];
-        inet_ntop(AF_INET, &client_addr.sin_addr, addr, sizeof(addr_len));
+        inet_ntop(AF_INET, &client_addr.sin_addr, addr, sizeof(addr));
         printf("\n[TCP server] client accept: IP addr=%s, Port num=%d\n", addr, ntohs(client_addr.sin_port));
 
         while(true)
